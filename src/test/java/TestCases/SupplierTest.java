@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.annotations.BeforeMethod;
 
 
 import utilities.BaseClass;
 import utilities.CommonMethod;
-
+@Test(groups = "Smoke")
 public class SupplierTest extends CommonMethod {
 	
 	public SupplierTest() {
@@ -34,7 +34,7 @@ public class SupplierTest extends CommonMethod {
           
          
 	}
-    @Test(priority=2,groups= {"Smoke"})// order of wiche test we run first 
+    @Test(priority=2)// order of wiche test we run first 
     public void testCase() {
     	    	sup.usernamefile.sendKeys(BaseClass.getProperty("supplierUsername"));
   	sup.Password.sendKeys(BaseClass.getProperty("supplierPassword"));
