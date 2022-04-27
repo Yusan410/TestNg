@@ -1,5 +1,6 @@
 package utilities;
 
+import org.testng.annotations.AfterMethod;
 import java.io.FileInputStream;
 import java.net.MalformedURLException;
 
@@ -74,6 +75,7 @@ public class BaseClass {
 			}
 
 			// close/quit browser
+			@AfterMethod
 			public static void tearDown() {
 				if (driver != null) {
 					driver.close();
