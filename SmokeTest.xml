@@ -4,24 +4,21 @@
 
 <groups>
 <run>
-
 <include name="Smoke"/>
-<include name="Regression"/>
-
-<exclude name="Regression"/>
-
 
 </run>
-
 
 </groups>
 
 
 
 
-  <test thread-count="5" name="SmokeTest">
+
+
+  <test thread-count="5" name="Test">
     <classes>
       <class name="TestCases.groupsTest"/>
+      <class name="TestCases.SupplierTest"/>
      
       
     </classes>

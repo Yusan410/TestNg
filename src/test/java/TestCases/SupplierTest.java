@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 
 
@@ -30,6 +31,8 @@ public class SupplierTest extends CommonMethod {
 
     	
           BaseClass.getDriver().get(BaseClass.getProperty("supplierBackEndUrl"));
+          
+         
 	}
     @Test(priority=2,groups= {"Smoke"})// order of wiche test we run first 
     public void testCase() {
