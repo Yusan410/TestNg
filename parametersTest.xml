@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+
+
+
+  <test thread-count="5" name="Test">
+  
+  <parameter name ="Val1" value ="33"/>
+  <parameter name ="Val2" value = "45"/>
+  
+  <parameter name="Name1" value ="Yusan"/>
+  <parameter name="Name2" value ="Ali"/>
+  
+   <classes>
+      <class name="TestCases.PrametersTest"/>
+      
+     
+      
+    </classes>
+  
+  
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

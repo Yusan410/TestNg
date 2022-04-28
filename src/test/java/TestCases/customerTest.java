@@ -6,11 +6,13 @@ import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import utilities.BaseClass;
 import utilities.CommonMethod;
-
+import utilities.TestNgListner;
+@Listeners(TestNgListner.class)
 public class customerTest extends CommonMethod {
 	
 	@BeforeMethod
@@ -23,11 +25,15 @@ public class customerTest extends CommonMethod {
 		
 		
 	}
-	@Test(dependsOnGroups={"Smoke"},groups="Smoke")
-	public void login() throws InterruptedException {
+	@Test
+	public void login() throws InterruptedException, MalformedURLException {
 		
 		cus.cookies.click();
 		cus.loginUsername.sendKeys(BaseClass.getProperty("customerUsername"));
+		
+		//takeScreenshot(".//customerUsername/screen.png");
+		
+		
 		cus.loginpassword.sendKeys(BaseClass.getProperty("cusTomerPassword"));
 		//cus.cookies.click();
 		Thread.sleep(3000);
