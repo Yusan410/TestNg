@@ -75,10 +75,11 @@ public class BaseClass {
 			}
 
 			// close/quit browser
+			
 			@AfterMethod
 			public static void tearDown() {
 				if (driver != null) {
-					driver.close();
+					//driver.close();
 					// driver.quit();
 					driver = null;
 				}

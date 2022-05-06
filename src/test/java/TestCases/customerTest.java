@@ -29,10 +29,10 @@ public class customerTest extends CommonMethod {
 	public void login() throws InterruptedException, MalformedURLException {
 		
 		cus.cookies.click();
-		cus.loginUsername.sendKeys(BaseClass.getProperty("customerUsername"));
+		//cus.loginUsername.sendKeys(BaseClass.getProperty("customerUsername"));
 		
 		//takeScreenshot(".//customerUsername/screen.png");
-		
+		cus.loginUsername().sendKeys(BaseClass.getProperty("customerUsername"));
 		
 		cus.loginpassword.sendKeys(BaseClass.getProperty("cusTomerPassword"));
 		//cus.cookies.click();

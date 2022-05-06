@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ParraelTest {
 	
-	public WebDriver driver;
+	WebDriver driver;
 	
 	@Test
 	public void chromeTest() {

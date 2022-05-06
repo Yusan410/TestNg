@@ -16,7 +16,13 @@ public class supplierPages {
 		
 	}
 	@FindBy(xpath="//*[@id=\"layoutAuthentication_content\"]/main/div/div/div/div[1]/div/form/div[1]/label/input")
-	public WebElement usernamefile;
+	private WebElement usernamefile;
+	
+	public WebElement usernmaefile() {
+		
+		return usernamefile;
+		
+	}
 	@FindBy(xpath="//*[@id=\"layoutAuthentication_content\"]/main/div/div/div/div[1]/div/form/div[2]/label/input")
 	public WebElement Password;
 	@FindBy(xpath="//*[@id=\"layoutAuthentication_content\"]/main/div/div/div/div[1]/div/form/div[4]/button")

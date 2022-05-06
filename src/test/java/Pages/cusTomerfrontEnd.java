@@ -22,7 +22,12 @@ public class cusTomerfrontEnd {
 		
 	}
 	@FindBy(xpath="//*[@id=\"fadein\"]/div[1]/div/div[2]/div[2]/div/form/div[1]/div/input")
-	public WebElement loginUsername;
+	private WebElement loginUsername;
+	
+	public WebElement loginUsername() {
+		
+		return loginUsername;
+	}
 	@FindBy(xpath="//*[@id=\"fadein\"]/div[1]/div/div[2]/div[2]/div/form/div[2]/div[1]/input")
 	public WebElement loginpassword;
 	@FindBy(xpath="//*[@id=\"fadein\"]/div[1]/div/div[2]/div[2]/div/form/div[3]/button")

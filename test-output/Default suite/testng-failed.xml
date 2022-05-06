@@ -6,7 +6,8 @@
       <class name="TestCases.customerTest">
         <methods>
           <include name="setup"/>
-          <include name="custest"/>
+          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
       </class> <!-- TestCases.customerTest -->
     </classes>

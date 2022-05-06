@@ -36,7 +36,9 @@ public class SupplierTest extends CommonMethod {
 	}
     @Test(priority=2)// order of wiche test we run first 
     public void testCase() {
-    	    	sup.usernamefile.sendKeys(BaseClass.getProperty("supplierUsername"));
+    	    	//sup.usernamefile.sendKeys(BaseClass.getProperty("supplierUsername"));
+    	
+    	sup.usernmaefile().sendKeys(BaseClass.getProperty("supplierUsername"));
   	sup.Password.sendKeys(BaseClass.getProperty("supplierPassword"));
    	sup.LoginButton.click();
     	
