@@ -1,10 +1,10 @@
 package TestCases;
 
+
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class PrametersTest {
-	
 	@Parameters({"Val1","Val2"})
 	@Test
 	public void sumOf(int v1,int v2) {

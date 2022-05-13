@@ -36,7 +36,7 @@ public class restAssurdGet {
 		int statuscode = myResponse.getStatusCode();
 		
 		
-		System.out.println(statuscode);
+		//System.out.println(statuscode);
 		
 		Assert.assertEquals(statuscode, 200);
 		
