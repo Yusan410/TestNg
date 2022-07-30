@@ -10,13 +10,18 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import utilities.ConTanst;
+import utilities.ExcelUtility;
+
 
 
 public class Excell_teSt {
 	
 	public static void main(String[] args) throws IOException {
 		
-		String excellpath = "/Users/yusan/eclipse-workspace/NewTestNgP/src/test/resources/DataFOlder/ALII.xlsx";
+		String excellpath = ConTanst.excel_path;
+		
+		
 		
 		FileInputStream file = new FileInputStream(excellpath);
 		
@@ -29,7 +34,7 @@ public class Excell_teSt {
 		
 		Cell cell = row.getCell(0);
 		
-		System.out.println("1- "+sheet.getRow(0).getCell(0));
+		//System.out.println("1- "+sheet.getRow(0).getCell(0));
 		
 		
 		DataFormatter object =new  DataFormatter();
@@ -40,10 +45,10 @@ public class Excell_teSt {
 				
 				String cellvalue = object.formatCellValue(cell1);
 				
-				System.out.print(cellvalue+"|");
+				System.out.print("   |  "+cellvalue );
 			}
 			
-			System.out.println("   /n ");
+			System.out.println();
 		}
 			
 	}
